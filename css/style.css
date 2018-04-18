@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #696969;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #ffffff; }
+
+a {
+  color: #c6c6c6;
+  text-decoration: none; }
+  a:visited {
+    color: #ffffff; }
+  a:hover {
+    color: #c6c6c6; }
+  a:active {
+    color: #c6c6c6; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #teatime i {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+
+
+/* Header
+------------------------------------------------------------*/
+#tea-img {
+background-image: url("../images/tea-img.jpg");
+height:250px;
+width: 100%;
+background-size: cover;
+background-position: center center;
+}
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 10px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#teatime {
+  background-color: #FFF; }
+  #teatime .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #teatime h2, #sweets h2{
+    color: #696969; 
+    font-weight: bold;
+    display: flex;
+    justify-content:center;
+    width: 300px;
+    margin:20px auto 0;
+  line-height: 80px;
+  }
+  #teatime .tea-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #teatime i ,#sweets i {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    font-size: 4.5rem;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+  #teatime h3 {
+    color: #696969;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  #sweets {
+    margin: 40px 0 50px;
+  }
+
+ .shadow {
+  width:180px;
+  font-size:14px;
+  color:#FFFFFF;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#696969;
+  border-radius:5px;
+  box-shadow:1px 1px #595959;
+  margin:0 auto;
+}
+
+.shadow:hover {
+    background: #919191;
+}
+
+
+
+    
+/* pc */
+@media (min-width: 768px) {
+  
+/* Header
+------------------------------------------------------------*/
+ #tea-img {
+height:500px;
+}
+  
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; }
+
+  /* Header
+  ------------------------------------------------------------*/
+  #teatime .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #teatime .tea-box {
+    margin: 0 10px; }
+}
